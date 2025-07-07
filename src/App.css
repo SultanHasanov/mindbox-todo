@@ -1,38 +1,121 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.todo-app {
+  max-width: 550px;
+  margin: 50px auto;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h1 {
+  font-size: 100px;
+  font-weight: 100;
   text-align: center;
+  color: rgba(175, 47, 47, 0.15);
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-form {
   display: flex;
-  flex-direction: column;
+  border-bottom: 1px solid #ededed;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 16px 16px 16px 60px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+}
+
+.todo-input::placeholder {
+  font-style: italic;
+  color: #e6e6e6;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+  border-bottom: 1px solid #ededed;
+  font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-checkbox {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div input[type="checkbox"]:checked::before {
+  content: '✓';
+  font-size: 18px;
+  color: #5dc2af;
+  position: absolute;
+  left: 5px;
+  top: -2px;
+}
+
+.todo-text {
+  flex-grow: 1;
+}
+
+.todo-text.completed {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.todo-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filters button {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 3px 7px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.filters button.active {
+  border: 1px solid rgba(175, 47, 47, 0.2);
+}
+
+.clear-completed {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.clear-completed:hover {
+  text-decoration: underline;
 }
