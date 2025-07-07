@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SultanHasanov/mindbox-todo/static/css/main.4b6300e4.css",
-    "main.js": "/SultanHasanov/mindbox-todo/static/js/main.b4630743.js",
-    "static/js/453.344536af.chunk.js": "/SultanHasanov/mindbox-todo/static/js/453.344536af.chunk.js",
-    "index.html": "/SultanHasanov/mindbox-todo/index.html",
-    "main.4b6300e4.css.map": "/SultanHasanov/mindbox-todo/static/css/main.4b6300e4.css.map",
-    "main.b4630743.js.map": "/SultanHasanov/mindbox-todo/static/js/main.b4630743.js.map",
-    "453.344536af.chunk.js.map": "/SultanHasanov/mindbox-todo/static/js/453.344536af.chunk.js.map"
+    "main.css": "/mindbox-todo/static/css/main.4b6300e4.css",
+    "main.js": "/mindbox-todo/static/js/main.51df9da0.js",
+    "static/js/453.344536af.chunk.js": "/mindbox-todo/static/js/453.344536af.chunk.js",
+    "index.html": "/mindbox-todo/index.html",
+    "main.4b6300e4.css.map": "/mindbox-todo/static/css/main.4b6300e4.css.map",
+    "main.51df9da0.js.map": "/mindbox-todo/static/js/main.51df9da0.js.map",
+    "453.344536af.chunk.js.map": "/mindbox-todo/static/js/453.344536af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b6300e4.css",
-    "static/js/main.b4630743.js"
+    "static/js/main.51df9da0.js"
   ]
 }
